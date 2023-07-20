@@ -4,7 +4,7 @@ let wins =0;
 let lose=0;
 let tie=0;
 
-/** This function checks the button that was selected */
+/** This function checks the button that was selected rock/paper/scissors nd assigns a numerical value*/
 function comCheck(gameSelect){
    
     if (gameSelect===0){
@@ -28,25 +28,29 @@ function comCheck(gameSelect){
 }
 
 
-
+/**This function compares computer choice with the users choice */
 function winCheck(func1){
-    var func2 = Math.floor(Math.random()*1000)%3;
-    comCheck(func2)
+    
+    var func2 = Math.floor(Math.random()*1000)%3;//this randomizes the selection of rock paper scissors...
+    comCheck(func2); // this function checks the selection of the computer and assigns a value that equates to rock/paper/scissors
+    
+
     if ((func1===1 && func2===0)||(func1===2 && func2===1)||(func1===0 && func2===2)){
         document.getElementById('match').innerHTML="You win!!";
         wins++;
-    }
+    }//check for values where user wins
     else if ( func1===func2){
         document.getElementById('match').innerHTML="You tie!!";
         tie++;
-    }
+    }//check for values where user ties
     else{
         document.getElementById('match').innerHTML="You lose!!";
         lose++;
-    }
+    }//check for values where user lose
    
 }
 
+/** keeps track of the amount of games and also prints final score */
 function endCall(){
     count++;
     var stats;
@@ -86,7 +90,7 @@ function endCall(){
 
     
 
-  
+  /**function call */
         
         const paper=document.getElementById("paper");
         paper.addEventListener("click",function(){

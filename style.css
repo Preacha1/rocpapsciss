@@ -1,3 +1,6 @@
+
+
+/** modification to the styles without using screen modification styling*/
 body{
     font-family:Arial, Helvetica, sans-serif;
     background-color: #282A35;
@@ -63,7 +66,7 @@ body{
 
 
 
-
+/**code was copied and used to style button*/
 .button-33 {
   background-color: #c2fbd7;
   border-radius: 100px;
