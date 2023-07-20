@@ -48,7 +48,7 @@ function winCheck(func1){
         lose++;
     }//check for values where user lose
     document.getElementById('win').innerHTML=wins;
-    document.getElementById('lose').innerHTML=lose
+    document.getElementById('lose').innerHTML=lose;
 }
 
 /** keeps track of the amount of games and also prints final score */
