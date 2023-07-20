@@ -24,12 +24,12 @@ body{
 }
 
 .gamebutton img, .comresult img{
-    height:200px;
+    height:150px;
     margin: 5px;
 }
 
 .gamebutton {
-    margin: 30px;
+    margin: 10px;
 }
 
 .gameflex, .comresult{
@@ -52,12 +52,15 @@ body{
     align-items: center;
 }
 
+#win{
+    margin-right: 60px;
+}
 
 
 #finishgame{
     display: none;
     flex-direction: column;
-    padding: 200px;
+    padding: 60px;
     align-items: center;
     align-self: center;
     color: white;
