@@ -3,21 +3,57 @@
     <head>
         <title>Play Rock-Paper-Scissor</title>
         <link type="text/css" rel="stylesheet" href="style.css">
+        
 
     </head>
 
     <body>
-        <div class="game-title">
-            <h1>The Rock-Paper-Scissors Game</h1>
-        </div>     
-        <p>Rules;
-            Rock beats Scissors
-            Scissors beats paper
-            Paper beats rock
-        </p>
-        <img src="img/rock.png" alt="rock">
-        <img src="img/paper.png" alt="rock">
-        <img src="img/scissors.png" alt="rock">        
+        
+            
+            <div class="game-title">
+                <h1>The Rock-Paper-Scissors Game</h1>
+            </div>     
+        <div id="gamebody">     
+            <p>Rules;
+                The rock is a closed fist; paper is a flat hand with fingers and thumb extended and the palm facing downward; 
+                </br>
+                and scissors is a fist with the index and middle fingers fully extended toward the opposing player. 
+                </br>
+                Rock wins against scissors; paper wins against rock; and scissors wins against paper.
+            </br>
+            </br>
+            <em>YOU HAVE 5 CHANCES TO WIN...</em>
+            </p>
+            </br>
+            <p>
+                Make your choice!!
+            </p>
+            <div class="gameflex">
+                <button class="gamebutton" id="rock"><img src="img/rock.png" alt="rock"></button>
+                <button class="gamebutton" id="paper"><img src="img/paper.png" alt="paper"></button>
+                <button class="gamebutton" id="scissors"><img src="img/scissors.png" alt="scissors"></button>        
+            </div>
 
+            <div class="comresult">
+                <p id="match"></p>
+                <img id="comchoice" src="">
+            </div>
+        
+        </div>
+        
+        
+        <div id="finishgame" >
+            <h1 id="score"></h1>
+            <h1 id="status"></h1>
+            <br>
+            <form action="index.html">
+                <button type="submit" class="button-33" role="button">Play Again</button>
+            </form>
+        </div>
+
+
+
+
+        <script src="script.js"></script>
     </body>
 </html>
